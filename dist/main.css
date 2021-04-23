@@ -202,6 +202,10 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  padding-top: calc(10rem + 1.5rem);
+}
+
 img {
   width: 100%;
 }
@@ -213,10 +217,10 @@ img {
 
 /* BEM Blocks */
 .header {
-  width: calc(100% - 1rem);
+  width: calc(100% - 2rem);
   position: fixed;
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 1rem;
+  left: 1rem;
   border: 2px solid #000000;
 }
 .header__wrapper {
@@ -227,8 +231,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  min-height: 10rem;
 }
 @media screen and (max-width: 600px) {
   .header__wrapper {
@@ -274,6 +277,28 @@ img {
 }
 .tile__desc {
   margin: 0 0 0 1rem;
+}
+
+.container {
+  display: flex;
+}
+
+.hero {
+  width: 70%;
+  height: 59rem;
+  margin-right: 1rem;
+  background-color: red;
+  border: 2px solid #000000;
+}
+
+.aside {
+  width: 30%;
+}
+.aside .tile {
+  margin-top: 1rem;
+}
+.aside .tile:first-of-type {
+  margin-top: 0;
 }
 
 .footer {

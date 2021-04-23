@@ -1,16 +1,15 @@
 .header {
-  width: calc(100% - 1rem);
+  width: calc(100% - 2rem);
   position: fixed;
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 1rem;
+  left: 1rem;
   border: 2px solid $color-black;
   &__wrapper {
     @include wrapper;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    min-height: $header-height;
   }
   &__logo {
     margin: 0;
