@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}

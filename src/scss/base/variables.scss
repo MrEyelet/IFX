@@ -1,0 +1,29 @@
+//colors
+$color-dark: #2d3236;
+$color-dimmed: #9fa3a7;
+$color-white: #ffffff;
+
+//layout
+$wrapper-width: 1366rem;
+$wrapper-padding: 4rem;
+// $vw-base: 1366;
+
+//font styles
+$base-font: "Poppins", sans-serif;
+$base-font-weight: 400;
+$base-font-size: 2rem;
+
+//z-index
+$over-all: 99999999;
+$over-content: 100;
+$below-content: -100;
+
+//bp
+$screen-mobile-sm: 320px;
+$screen-mobile: 375px;
+$screen-mobile-lg: 480px;
+$screen-phablet: 600px;
+$screen-portrait: 768px;
+$screen-tablet: 1024px;
+$screen-laptop: 1366px;
+$screen-xxl: 1920px;
