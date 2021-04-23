@@ -1,5 +1,4 @@
 .hero {
-  // @include resp-img((800/1200) * 100%);
   width: calc(70% - 1rem);
   height: 59rem;
   margin-right: 1rem;
@@ -8,6 +7,8 @@
   border: 2px solid $color-black;
   overflow: hidden;
   @include portrait {
+    @include resp-img((590/870) * 100%);
+    height: auto;
     width: 100%;
     margin-right: 0;
     order: 1;
@@ -17,6 +18,7 @@
     object-fit: cover;
   }
   &__title {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
