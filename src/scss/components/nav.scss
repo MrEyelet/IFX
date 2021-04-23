@@ -1,13 +1,30 @@
 .nav {
+  @include phablet {
+    height: 100%;
+    width: 85%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: $color-white;
+    transition: 0.35s transform ease-in-out;
+  }
   &__list {
     display: flex;
     padding: 0;
     margin: 0;
+    @include phablet {
+      flex-direction: column;
+      padding: 15rem 2rem 2rem 2rem;
+      text-align: right;
+    }
   }
   &__list-el {
     margin-left: 3rem;
     list-style-type: none;
     text-transform: uppercase;
+    @include phablet {
+      margin-left: 0;
+    }
     &:first-of-type {
       margin-left: 0;
     }

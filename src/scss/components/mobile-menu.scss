@@ -1,0 +1,19 @@
+.mobile-menu {
+  display: none;
+  &__checkbox {
+    display: none;
+    @include phablet {
+      &:checked {
+        ~ .nav {
+          transform: translateX(100%);
+        }
+      }
+    }
+  }
+  @include phablet {
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
