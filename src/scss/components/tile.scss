@@ -1,0 +1,19 @@
+.tile {
+  padding: 1rem;
+  background-color: lightblue;
+  border: 2px solid $color-black;
+  &__header {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    width: 7.5rem;
+    flex-shrink: 0;
+  }
+  &__desc {
+    margin: 0 0 0 1rem;
+  }
+}

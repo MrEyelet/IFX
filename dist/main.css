@@ -256,6 +256,26 @@ img {
   margin-left: 0;
 }
 
+.tile {
+  padding: 1rem;
+  background-color: lightblue;
+  border: 2px solid #000000;
+}
+.tile__header {
+  margin: 0;
+  text-transform: uppercase;
+}
+.tile__inner {
+  display: flex;
+}
+.tile__img {
+  width: 7.5rem;
+  flex-shrink: 0;
+}
+.tile__desc {
+  margin: 0 0 0 1rem;
+}
+
 .footer {
   margin-top: auto;
   border-top: 2px solid #000000;
