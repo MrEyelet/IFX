@@ -2,7 +2,7 @@
   display: none;
   &__checkbox {
     display: none;
-    @include phablet {
+    @include portrait {
       &:checked {
         ~ .nav {
           transform: translateX(100%);
@@ -10,7 +10,7 @@
       }
     }
   }
-  @include phablet {
+  @include portrait {
     display: block;
     &:hover {
       cursor: pointer;

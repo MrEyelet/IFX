@@ -1,5 +1,10 @@
 .aside {
   width: 30%;
+  @include portrait {
+    width: 50%;
+    margin-top: 1rem;
+    order: 3;
+  }
   .tile {
     margin-top: 1rem;
     &:first-of-type {

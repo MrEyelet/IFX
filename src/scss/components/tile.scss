@@ -1,7 +1,12 @@
 .tile {
+  min-height: 12rem;
   padding: 1rem;
   background-color: lightblue;
   border: 2px solid $color-black;
+  @include portrait {
+    display: flex;
+    align-items: center;
+  }
   &__header {
     margin: 0;
     text-transform: uppercase;
@@ -12,8 +17,14 @@
   &__img {
     width: 7.5rem;
     flex-shrink: 0;
+    @include portrait {
+      display: none;
+    }
   }
   &__desc {
     margin: 0 0 0 1rem;
+    @include portrait {
+      display: none;
+    }
   }
 }

@@ -4,6 +4,7 @@
   top: 1rem;
   left: 1rem;
   border: 2px solid $color-black;
+  background-color: $color-white;
   &__wrapper {
     @include wrapper;
     display: flex;

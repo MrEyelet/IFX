@@ -1,4 +1,23 @@
 .section {
   width: 100%;
   position: relative;
+  &--images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    z-index: $below-content;
+    @include portrait {
+      width: 50%;
+      order: 2;
+    }
+    .picture-tile {
+      margin-top: 1rem;
+      @include portrait {
+        margin-right: 1rem;
+      }
+      &:nth-child(odd) {
+        margin-right: 1rem;
+      }
+    }
+  }
 }
