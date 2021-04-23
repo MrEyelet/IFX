@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 4px solid $color-black;
+  &__wrapper {
+    @include wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  &__logo {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

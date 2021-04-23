@@ -1,0 +1,15 @@
+.nav {
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  &__list-el {
+    margin-left: 3rem;
+    list-style-type: none;
+    text-transform: uppercase;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
