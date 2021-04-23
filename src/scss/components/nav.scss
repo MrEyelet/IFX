@@ -10,6 +10,7 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     @include phablet {
@@ -20,12 +21,10 @@
   }
   &__list-el {
     margin-left: 3rem;
+    padding: 0.5rem 0;
     list-style-type: none;
     text-transform: uppercase;
     @include phablet {
-      margin-left: 0;
-    }
-    &:first-of-type {
       margin-left: 0;
     }
   }

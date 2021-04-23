@@ -258,6 +258,7 @@ img {
 }
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -270,6 +271,7 @@ img {
 }
 .nav__list-el {
   margin-left: 3rem;
+  padding: 0.5rem 0;
   list-style-type: none;
   text-transform: uppercase;
 }
@@ -277,9 +279,6 @@ img {
   .nav__list-el {
     margin-left: 0;
   }
-}
-.nav__list-el:first-of-type {
-  margin-left: 0;
 }
 
 .mobile-menu {
@@ -331,8 +330,20 @@ img {
   width: calc(70% - 1rem);
   height: 59rem;
   margin-right: 1rem;
-  background-color: red;
+  position: relative;
   border: 2px solid #000000;
+  overflow: hidden;
+}
+.hero__image {
+  height: 100%;
+  object-fit: cover;
+}
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
 }
 
 .aside {
