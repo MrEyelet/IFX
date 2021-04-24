@@ -9,24 +9,31 @@
     height: 8rem;
     overflow: hidden;
     @include portrait {
-      height: 7.5rem;
+      height: 5.4rem;
     }
     img {
       object-fit: cover;
       height: 100%;
     }
   }
-  &__heading {
+  &__wrap {
     min-height: 8rem;
     padding: 0.5rem;
+    @include portrait {
+      display: flex;
+      align-items: center;
+      min-height: 5rem;
+      // margin-top: 1rem;
+    }
+  }
+  &__heading {
+    @include line-clamp(-webkit-box, 5, vertical, hidden);
     margin: 0;
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
     @include portrait {
-      display: flex;
-      align-items: center;
-      margin-top: 1rem;
+      @include line-clamp(-webkit-box, 3, vertical, hidden);
     }
   }
 }

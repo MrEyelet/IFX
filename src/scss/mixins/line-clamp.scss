@@ -1,0 +1,6 @@
+@mixin line-clamp($display, $line-clamp, $box-orient, $overflow) {
+  display: $display;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: $box-orient;
+  overflow: $overflow;
+}

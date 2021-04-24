@@ -2,22 +2,29 @@
   box-sizing: border-box;
 }
 html {
+  font-size: 18px;
   font-size: vw(10);
+  @include laptop-lg {
+    font-size: vw(10);
+  }
   @include portrait {
     font-size: 10px;
   }
 }
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 0 1rem;
   font-family: $base-font;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   overflow-x: hidden;
 }
 .main {
+  // @include wrapper;
+  margin-bottom: 2rem;
   padding-top: calc(#{$header-height} + 1rem);
 }
 img {

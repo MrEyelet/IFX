@@ -33,6 +33,11 @@
     @content;
   }
 }
+@mixin laptop-lg {
+  @media only screen and (max-width: #{$screen-laptop-lg}) {
+    @content;
+  }
+}
 @mixin xxl {
   @media only screen and (max-width: #{$screen-xxl}) {
     @content;

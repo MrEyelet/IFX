@@ -3,7 +3,6 @@
   width: 30%;
   @include portrait {
     width: 50%;
-    order: 3;
   }
   .tile {
     margin-top: 0.8rem;

@@ -9,15 +9,23 @@
   @include portrait {
     display: flex;
     align-items: center;
+    min-height: 5rem;
   }
   &__heading {
+    @include ellipsis(nowrap, hidden, ellipsis);
     margin: 0;
     font-size: 1.3rem;
     font-weight: 400;
     text-transform: uppercase;
+    @include portrait {
+      @include ellipsis(pre-wrap, visible, unset);
+      @include line-clamp(-webkit-box, 2, vertical, hidden);
+      margin-right: 2rem;
+    }
   }
   &__inner {
     display: flex;
+    align-items: flex-start;
   }
   &__img {
     width: 4.5rem;
@@ -31,9 +39,16 @@
       display: none;
     }
   }
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   &__desc {
     margin: 0 0 0 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
     color: $color-dark;
     @include portrait {
       display: none;
@@ -41,9 +56,12 @@
   }
   &__link-label {
     display: none;
+    font-size: 1.4rem;
     @include portrait {
       display: block;
+      min-width: 5rem;
       margin-left: auto;
+      text-align: right;
     }
   }
 }

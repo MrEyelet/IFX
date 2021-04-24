@@ -6,6 +6,7 @@
     top: 0;
     left: -100%;
     background: $color-white;
+    border-right: 0.2rem solid $color-black;
     transition: 0.35s transform ease-in-out;
   }
   &__list {
@@ -15,12 +16,12 @@
     margin: 0;
     @include portrait {
       flex-direction: column;
-      padding: 2rem;
+      padding: 0.8rem 2rem;
       text-align: right;
     }
   }
   &__list-el {
-    margin-left: 3.5rem;
+    margin-left: 3.3rem;
     padding: 0.5rem 0;
     list-style-type: none;
     text-transform: uppercase;
