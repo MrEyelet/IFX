@@ -1,10 +1,6 @@
 @mixin wrapper($max-width: $wrapper-width, $padding: $wrapper-padding) {
-  // max-width: calc(#{$wrapper-width} + 2 * (#{$wrapper-padding}));
   max-width: $max-width;
   width: 100%;
   padding: 0 $padding;
   margin: 0 auto;
-  // @include phablet {
-  //   padding: 0 2rem;
-  // }
 }

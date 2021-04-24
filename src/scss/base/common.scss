@@ -2,11 +2,7 @@
   box-sizing: border-box;
 }
 html {
-  // font-size: 18px;
   font-size: vw(10);
-  // @include laptop-lg {
-  //   font-size: vw(10);
-  // }
   @include portrait {
     font-size: 10px;
   }
@@ -23,7 +19,6 @@ body {
   overflow-x: hidden;
 }
 .main {
-  // @include wrapper;
   margin-bottom: 2rem;
   padding-top: calc(#{$header-height} + 1rem);
 }

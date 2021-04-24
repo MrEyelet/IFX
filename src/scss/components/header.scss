@@ -6,13 +6,11 @@
   z-index: $over-content;
   background-color: $color-light;
   &__wrapper {
-    // @include wrapper;
     display: flex;
     min-height: $header-height;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    // border: 0.2rem solid $color-black;
   }
   &__logo {
     margin: 0;

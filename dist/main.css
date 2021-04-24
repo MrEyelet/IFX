@@ -457,7 +457,8 @@ img {
 }
 .picture-tile__wrap {
   min-height: 8rem;
-  padding: 0.5rem;
+  padding: 0 0.5rem 0.5rem;
+  margin-top: 1rem;
   background-color: #efefef;
 }
 @media only screen and (max-width: 768px) {
@@ -465,6 +466,8 @@ img {
     display: flex;
     align-items: center;
     min-height: 5.5rem;
+    margin-top: 0;
+    padding-top: 0.5rem;
   }
 }
 .picture-tile__heading {
