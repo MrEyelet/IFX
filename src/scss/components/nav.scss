@@ -15,7 +15,7 @@
     margin: 0;
     @include portrait {
       flex-direction: column;
-      padding: 15rem 2rem 2rem 2rem;
+      padding: 2rem;
       text-align: right;
     }
   }
@@ -26,6 +26,14 @@
     text-transform: uppercase;
     @include portrait {
       margin-left: 0;
+    }
+  }
+  &__link {
+    color: $color-black;
+    text-decoration: none;
+    transition: 0.25s opacity ease-in-out;
+    &:hover {
+      opacity: 0.7;
     }
   }
 }

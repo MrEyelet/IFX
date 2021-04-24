@@ -1,6 +1,6 @@
 .picture-tile {
   width: calc(50% - 1rem);
-  border: 2px solid $color-black;
+  border: 0.2rem solid $color-black;
   @include portrait {
     width: 100%;
   }
