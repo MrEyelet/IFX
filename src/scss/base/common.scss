@@ -2,7 +2,10 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: vw(10);
+  @include portrait {
+    font-size: 10px;
+  }
 }
 body {
   display: flex;
@@ -15,7 +18,7 @@ body {
   overflow-x: hidden;
 }
 .main {
-  padding-top: calc(#{$header-height} + 1.5rem);
+  padding-top: calc(#{$header-height} + 1rem);
 }
 img {
   width: 100%;
