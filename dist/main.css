@@ -191,7 +191,7 @@ html {
   font-size: 18px;
   font-size: 1.25vw;
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1680px) {
   html {
     font-size: 1.25vw;
   }
@@ -358,10 +358,10 @@ img {
   color: #000000;
   background-color: #efefef;
   text-decoration: none;
-  transition: 0.25s opacity ease-in-out;
+  transition: 0.25s background-color ease-in-out;
 }
 .tile:hover {
-  opacity: 0.7;
+  background-color: #e2e2e2;
 }
 @media only screen and (max-width: 768px) {
   .tile {
@@ -539,6 +539,7 @@ img {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
+  font-size: 2rem;
 }
 
 .aside {

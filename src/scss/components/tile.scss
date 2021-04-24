@@ -6,9 +6,9 @@
   background-color: $color-light;
   // border: 0.2rem solid $color-black;
   text-decoration: none;
-  transition: 0.25s opacity ease-in-out;
+  transition: 0.25s background-color ease-in-out;
   &:hover {
-    opacity: 0.7;
+    background-color: darken($color-light, 5%);
   }
   @include portrait {
     display: flex;
