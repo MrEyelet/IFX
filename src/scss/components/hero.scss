@@ -4,10 +4,11 @@
   height: 26rem;
   // @include resp-img((270/560) * 100%);
   margin-right: 1rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   position: relative;
   z-index: $below-content;
-  border: 0.2rem solid $color-black;
+  // border: 0.2rem solid $color-black;
+  background-color: $color-light;
   overflow: hidden;
   @include portrait {
     @include resp-img((260/560) * 100%);

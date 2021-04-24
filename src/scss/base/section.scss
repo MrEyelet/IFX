@@ -13,11 +13,11 @@
       @include portrait {
         margin-right: 1rem;
         &:nth-of-type(n + 2) {
-          margin-top: 0.8rem;
+          margin-top: 1rem;
         }
       }
       &:nth-of-type(n + 3) {
-        margin-top: 0.8rem;
+        margin-top: 1rem;
       }
       &:nth-child(odd) {
         margin-right: 1rem;
