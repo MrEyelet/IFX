@@ -188,13 +188,7 @@ template {
 }
 
 html {
-  font-size: 18px;
   font-size: 1.25vw;
-}
-@media only screen and (max-width: 1680px) {
-  html {
-    font-size: 1.25vw;
-  }
 }
 @media only screen and (max-width: 768px) {
   html {
@@ -376,7 +370,7 @@ img {
   text-overflow: ellipsis;
   margin: 0;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
@@ -480,7 +474,7 @@ img {
   overflow: hidden;
   margin: 0;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
@@ -540,6 +534,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .aside {
@@ -559,7 +554,6 @@ img {
 }
 
 .footer {
-  height: 2rem;
   margin-top: auto;
   border-top: 2px solid #000000;
 }
