@@ -231,6 +231,12 @@ img {
     width: 50%;
   }
 }
+.section--images .picture-tile:nth-of-type(n + 3) {
+  margin-top: 1rem;
+}
+.section--images .picture-tile:nth-child(odd) {
+  margin-right: 1rem;
+}
 @media only screen and (max-width: 768px) {
   .section--images .picture-tile {
     margin-right: 1rem;
@@ -238,12 +244,6 @@ img {
   .section--images .picture-tile:nth-of-type(n + 2) {
     margin-top: 1rem;
   }
-}
-.section--images .picture-tile:nth-of-type(n + 3) {
-  margin-top: 1rem;
-}
-.section--images .picture-tile:nth-child(odd) {
-  margin-right: 1rem;
 }
 
 /* BEM Blocks */
@@ -263,6 +263,7 @@ img {
   padding: 0 2rem;
 }
 .header__logo {
+  min-width: 15rem;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
@@ -276,6 +277,7 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
+    overfloe-y: auto;
     background: #ffffff;
     transition: 0.35s transform ease-in-out;
   }
@@ -294,8 +296,9 @@ img {
   }
 }
 .nav__list-el {
-  margin-left: 3.3rem;
+  margin-left: 4.5rem;
   padding: 0.5rem 0;
+  font-size: 1.3rem;
   list-style-type: none;
   text-transform: uppercase;
 }

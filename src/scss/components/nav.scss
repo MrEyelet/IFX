@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     left: -100%;
+    overfloe-y: auto;
     background: $color-white;
     transition: 0.35s transform ease-in-out;
   }
@@ -20,8 +21,9 @@
     }
   }
   &__list-el {
-    margin-left: 3.3rem;
+    margin-left: 4.5rem;
     padding: 0.5rem 0;
+    font-size: 1.3rem;
     list-style-type: none;
     text-transform: uppercase;
     @include portrait {
