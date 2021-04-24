@@ -33,7 +33,7 @@
     font-weight: 400;
     text-transform: uppercase;
     @include portrait {
-      @include line-clamp(-webkit-box, 3, vertical, hidden);
+      @include line-clamp(-webkit-box, 2, vertical, hidden);
     }
   }
 }
