@@ -6,6 +6,9 @@ html {
   font-size: vw(10);
   // font-size: 10px;
   @include portrait {
+    font-size: 13px;
+  }
+  @include mobile-lg {
     font-size: 10px;
   }
 }

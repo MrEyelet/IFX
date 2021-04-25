@@ -193,6 +193,11 @@ html {
 }
 @media only screen and (max-width: 768px) {
   html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
     font-size: 10px;
   }
 }
@@ -346,7 +351,7 @@ img {
   .mobile-menu {
     display: block;
     margin-left: auto;
-    /*IE*/
+    font-size: 1.4rem;
   }
   .mobile-menu:hover {
     cursor: pointer;

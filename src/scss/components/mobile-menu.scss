@@ -12,7 +12,8 @@
   }
   @include portrait {
     display: block;
-    margin-left: auto; /*IE*/
+    margin-left: auto;
+    font-size: 1.4rem;
     &:hover {
       cursor: pointer;
     }
