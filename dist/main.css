@@ -188,6 +188,7 @@ template {
 }
 
 html {
+  height: 100%;
   font-size: 1.25vw;
 }
 @media only screen and (max-width: 768px) {
@@ -208,7 +209,7 @@ body {
 }
 
 .main {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-top: calc(7rem + 1rem);
 }
 
@@ -251,13 +252,16 @@ img {
   width: calc(100% - 2rem);
   position: fixed;
   top: 0;
-  left: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
   background-color: #efefef;
 }
 .header__wrapper {
   display: flex;
   min-height: 7rem;
+  height: 7rem;
+  /*IE flex alignment*/
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
@@ -343,6 +347,8 @@ img {
 @media only screen and (max-width: 768px) {
   .mobile-menu {
     display: block;
+    margin-left: auto;
+    /*IE*/
   }
   .mobile-menu:hover {
     cursor: pointer;
