@@ -28,6 +28,7 @@
     text-transform: uppercase;
     @include portrait {
       margin-left: 0;
+      padding: 1.5rem 0;
     }
   }
   &__link {

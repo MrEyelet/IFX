@@ -23,7 +23,7 @@
     @include portrait {
       @include ellipsis(pre-wrap, visible, unset);
       @include line-clamp(-webkit-box, 2, vertical, hidden);
-      margin-right: 2rem;
+      margin-right: 1rem;
     }
   }
   &__inner {
@@ -61,7 +61,7 @@
     display: none;
     font-size: 1.4rem;
     @include portrait {
-      display: block;
+      @include line-clamp(-webkit-box, 2, vertical, hidden);
       min-width: 5rem;
       margin-left: auto;
       text-align: right;

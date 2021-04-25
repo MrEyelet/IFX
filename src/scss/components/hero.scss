@@ -1,18 +1,22 @@
 .hero {
   float: left;
   width: calc(70% - 1rem);
-  height: 26rem;
   margin-right: 1rem;
-  margin-bottom: 1rem;
-  position: relative;
   z-index: $below-content;
-  background-color: $color-light;
   overflow: hidden;
   @include portrait {
-    @include resp-img((260/560) * 100%);
-    height: auto;
     width: 100%;
     margin-right: 0;
+  }
+  &__image-wrap {
+    @include portrait {
+      @include resp-img((260/560) * 100%);
+      height: auto;
+    }
+    height: 26rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background-color: $color-light;
   }
   &__image {
     display: block;
