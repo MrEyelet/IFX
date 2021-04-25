@@ -201,6 +201,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
   padding: 0 1rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
@@ -225,7 +226,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  z-index: -100;
 }
 @media only screen and (max-width: 768px) {
   .section--images {
@@ -249,22 +249,20 @@ img {
 
 /* BEM Blocks */
 .header {
-  width: calc(100% - 2rem);
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  background-color: #efefef;
-}
-.header__wrapper {
   display: flex;
+  width: calc(100% - 2rem);
   min-height: 7rem;
   height: 7rem;
   /*IE flex alignment*/
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #efefef;
 }
 .header__logo {
   min-width: 15rem;
@@ -281,7 +279,7 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
-    overfloe-y: auto;
+    overflow-y: auto;
     background: #ffffff;
     transition: 0.35s transform ease-in-out;
   }

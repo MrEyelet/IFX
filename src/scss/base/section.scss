@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    z-index: $below-content;
     @include portrait {
       width: 50%;
     }
