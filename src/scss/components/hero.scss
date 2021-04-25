@@ -2,7 +2,6 @@
   float: left;
   width: calc(70% - 1rem);
   margin-right: 1rem;
-  z-index: $below-content;
   overflow: hidden;
   @include portrait {
     width: 100%;
